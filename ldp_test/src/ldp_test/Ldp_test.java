@@ -8,13 +8,36 @@ package ldp_test;
  *
  * @author sofia
  */
-public class Ldp_test {
+import java.util.Random;
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Ldp_test {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int numeroSecreto = random.nextInt(100) + 1;
+        int tentativa;
+        int tentativas = 0;
+        boolean acertou = false;
+        
+        System.out.println("Bem-vindo ao jogo de Adivinhacao!");
+        System.out.println("Tente adivinhar um numero entre 1 e 100.");
+        
+        while (!acertou) {
+            System.out.print("Digite seu palpite: ");
+            tentativa = scanner.nextInt();
+            tentativas++;
+            
+            if (tentativa == numeroSecreto) {
+                acertou = true;
+                System.out.println("Parabens! Voce acertou o numero em " + tentativas + " tentativas.");
+            } else if (tentativa < numeroSecreto) {
+                System.out.println("O numero secreto e maior!");
+            } else {
+                System.out.println("O numero secreto e menor!");
+            }
+        }
+        
+        scanner.close();
     }
-    
 }
