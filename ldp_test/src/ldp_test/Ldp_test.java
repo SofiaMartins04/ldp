@@ -11,7 +11,7 @@ public class Ldp_test {
         int tentativa;
         int tentativas = 0;
         boolean acertou = false;
-        int limiteTentativas = 10;
+        int limiteTentativas = 10; // Limite de tentativas para tornar o jogo mais desafiador
 
         System.out.println("Bem-vindo ao Jogo da Adivinhação Engraçada!!");
         System.out.println("Tente adivinhar o número entre 1 e 100.");
