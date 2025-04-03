@@ -6,7 +6,7 @@ package ldp_test;
 
 /**
  *
- * @author sofia
+ * @author beatriz
  */
 import java.util.Random;
 import java.util.Scanner;
