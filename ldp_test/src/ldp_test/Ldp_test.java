@@ -20,7 +20,7 @@ public class Ldp_test {
         int tentativas = 0;
         boolean acertou = false;
         
-        System.out.println("Bem-vindo ao jogo!!");
+        System.out.println("Bem-vindo ao jogo da Adivinha!!");
         System.out.println("Tente adivinhar um numero entre 1 e 100.");
         
         while (!acertou) {
